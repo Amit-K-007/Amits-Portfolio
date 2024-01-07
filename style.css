@@ -1,0 +1,88 @@
+#header a{
+    color: #892CDC;
+}
+body{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
+}
+h1,h2{
+    font-family: Baskerville,Baskerville Old Face,Hoefler Text,Garamond,Times New Roman,serif;
+}
+#profile-photo{
+    border: 10px solid #BC6FF1;
+    border-radius: 50%;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #892CDC, #ff4c68, #BC6FF1);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#introduction{
+    color: white;
+}
+
+#skills p{
+    color: #892CDC;
+}
+#skills h2{
+    font-weight: bold;
+    color: #52057B
+}
+#skills ul{
+    color: #52057B;
+    font-weight: bold;
+}
+#skills ul li{
+    color: #000000;
+    font-weight: normal;
+}
+#introduction > div{
+    height: 40rem;
+}
+#skills > div{
+    margin-top: -15rem;
+}
+@media (max-width: 767px){
+    #skills{
+        margin-top: 10rem;
+    }
+}
+.footer-flexbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.middle-footer{
+    display: flex;
+    flex-direction: column;
+}
+.middle-footer > *{
+    padding: 1rem;
+}
+.links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.links a{
+    padding: 10px 15px;
+    border-radius: 50%;
+    background-color: #52057B;
+    font-size: 30px;
+    color: white;
+}
